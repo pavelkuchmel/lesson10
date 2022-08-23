@@ -57,6 +57,7 @@ public class Lesson10 {
 -------------------------------------------------------------------------------------------------------------------
          */
         //#4
+        /*
         int sum = 0;
         int[] a = new int[15];
         for (int i = 0;i<a.length;i++){
@@ -65,6 +66,32 @@ public class Lesson10 {
         for (int i = 0;i<a.length;i++){
             System.out.print(a[i]+" ");
             if (a[i]%2==0)sum=sum+a[i];
+        }
+        System.out.println("\n"+sum);
+         */
+        /*
+------------------------------------------------------------------------------------------------------------------
+         */
+        int[] a = new int[15];
+        fillArray(a);
+        showArray(a);
+        sumChet(a);
+    }
+    static void fillArray (int[] a){
+        Random gen = new Random();
+        for (int i = 0;i<a.length;i++){
+            a[i] = gen.nextInt(25);
+        }
+    }
+    static void showArray (int[] a){
+        for (int i = 0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+    static void sumChet (int[] a){
+        int sum = 0;
+        for (int i = 0;i<a.length;i++){
+            if (a[i]%2==0)sum+=a[i];
         }
         System.out.println("\n"+sum);
     }
