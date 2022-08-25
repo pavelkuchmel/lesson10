@@ -29,7 +29,7 @@ public class Lesson10 {
         int mult = 1;
         int[]a = new int[13];
         for (int i = 0;i<a.length;i++){
-            a[i] = gen.nextInt(21)-12;
+            a[i] = gen.nextInt(26)-12;
         }
         for (int i = 0;i<a.length;i++){
             System.out.print(a[i]+" ");
